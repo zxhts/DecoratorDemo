@@ -9,7 +9,7 @@ class App extends Component {
         <div style={{width:'400px', height:'300px'}}>
            <p>我是App页面</p>
            <p>{this.props.value}</p>
-           <p>{`我来自${this.props.address}`}</p>
+           <p>{`我来自${this.props.address}，我今年${this.props.age}岁。`}</p>
         </div>     
      )
    }

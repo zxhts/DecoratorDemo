@@ -13,7 +13,7 @@ export const PageDecorator = (WrappedComponent) =>{
 
                 <div style={{backgroundColor:'skyblue'}}>
 
-                    <WrappedComponent {...this.props} value={"装饰器传过来的值"} address={this.state.address}></WrappedComponent>
+                    <WrappedComponent {...this.props} value={"装饰器传过来的值"} address={this.state.address} age={this.state.age}></WrappedComponent>
 
                 </div>
 
