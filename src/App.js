@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+// eslint-disable-next-line 
+import {PageDecorator} from './PageDecorator';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+@PageDecorator
+class App extends Component {
+   render(){
+     return (
+        <div style={{width:'400px', height:'300px'}}>
+           <p>我是App页面</p>
+           <p>{this.props.value}</p>
+           <p>{`我来自${this.props.address}`}</p>
+        </div>     
+     )
+   }
 }
 
 export default App;
