@@ -4,7 +4,7 @@ export const PageDecorator = (WrappedComponent) =>{
 
     return class PageNormal extends Component{
         state = {
-            address: '河北省承德市',
+            address: '加利福尼亚洛杉矶',
             age: 25,
         }
         render(){
